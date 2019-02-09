@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|ZCOOL+KuaiLe');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    color: #d6dbdf;
+}
+
+html, body {
+    background: #212f3c;
+}
+
+nav {
+    width: 249px;
+    height: 100%;
+    background: #283747;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #1b2631;
+}
+
+nav .boardTitle {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 60px;
+    border-bottom: 1px solid #1b2631;
+}
+
+nav .boardTitle p{
+    color: #e91e63;
+    line-height: 60px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 30px;
+}
+
+nav .userBox {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 60px;
+    border-bottom: 1px solid #1b2631;
+}
+
+nav .userBox img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 0;
+}
+
+nav .userBox .userInfo {
+    width: calc(100% - 40px - 14px);
+    vertical-align: top;
+    display: inline-block;
+}
+
+nav .userBox .userInfo h4 {
+    margin-top: 12.5px;
+}
+
+nav .userBox .userInfo h6 {
+    font-weight: 200;
+    margin-top: 3px;
+}
+
+.searchArea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+}
+
+.searchArea input{
+    width: 100%;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #1b2631;
+    background: #283747;
+    border-radius: 3px;
+    color: #5d6d7e;
+}
+
+nav .menuArea {
+    width: calc(100% - 20px);
+    padding: 10px 0;
+    margin-left: 10px;
+    border-bottom: 1px solid #1b2631;
+}
+
+nav .menuArea li{
+    height: 50px;
+    line-height: 50px;
+    font-size: 11pt;
+}
+
+nav .menuArea li svg {
+    margin-right: 12px;
+    float: left;
+    margin-top: 15px;
+}
+
+nav .recentArea {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+
+nav .recentArea > div {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #1b2631;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+nav .recentArea > div h4 {
+    font-weight: 200;
+    float: left;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+nav .recentArea > div p {
+    font-size: 14px;
+    margin-right: 10px;
+    float: right;
+}
+
+#content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
+.subContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+    background: 
+    linear-gradient( to right,
+      rgba(52, 73, 94 , .75), 
+      rgba(52, 73, 94, 0)
+    ),
+    url(https://a.thumbs.redditmedia.com/1olCjjrFzT7dHUkwAw0BbuedBT7txCQiS2SDXpI7W50.png);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #1b2631;
+}
+
+.banner .tagline {
+    color:#ebedef;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 28px;
+    line-height: 150px;
+}
+
+#sortMenu {
+    width: 100%;
+    height: 25px;
+    background: #1b2631;
+}
+
+#sortMenu > div {
+    height: 100%;
+}
+
+#sortMenu > div p {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+#sortMenu > div p span {
+    font-weight: bold;
+}
+
+#posts {
+    max-width: 750px;
+    display: inline-block;
+}
+
+#posts > div {
+    width: 100%;
+    background: #283747;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #1b2631;
+}
+
+#posts > div:nth-child(1) {
+    margin-top: 25px;
+}
+
+
+#posts div > img{
+    width: 100px;
+    border-radius: 3px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#posts > div > .interactions {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    border-top: 1px solid #1b2631;
+    text-align: right;
+}
+
+#posts > div > .interactions p {
+    display: inline-block;
+    font-size: 12.5px;
+    margin-left: 10px;
+}
+
+#posts > div > .interactions ul{
+    float: left;
+}
+
+#posts > div > .interactions ul li{
+    background: red;
+    border-radius: 3px;
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 8px;
+}
+
+#posts > div > .content  {
+    display: inline-block;
+    width: calc(100% - 44px - 100px);
+    vertical-align: top;
+    margin-top: 5px;
+    line-height: 200%;
+}
+
+#posts > div > .content  p{
+    line-height: 175%;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#posts > div > .content  p span{
+    color: #e91e63;
+    padding-left: 5px;
+}
+
+#sidebar {
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px;
+}
+
+#tagBar {
+    width: 100%;
+    background: #283747;
+    border-radius: 3px;
+    border: 1px solid #1b2631;
+}
+
+#footer {
+    width: 100%;
+    font-size: 13px;
+    width: 250px;
+    line-height: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.titleBar {
+    width: calc(100% - 20px);
+    height: 30px;
+    line-height: 30px;
+    margin: 10px;
+    margin-top: 6px;
+    border-bottom: 1px solid #1b2631;
+    font-size: 14px;
+}
+
+.tagCloud {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+
+.tagCloud li {
+    margin-bottom: 10px;
+    margin-right: 4px;
+    padding: 5px 8px;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 14px;
+    background: #1b2631;
+}
