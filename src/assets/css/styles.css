@@ -94,6 +94,18 @@ nav .menuArea li{
     font-size: 11pt;
 }
 
+nav .menuArea .router-link-active {
+    color: #e91e63;
+}
+
+nav .menuArea .router-link-active svg {
+    fill: #e91e63;
+}
+
+nav .menuArea li svg {
+    fill: #d6dbdf;
+}
+
 nav .menuArea li svg {
     margin-right: 12px;
     float: left;
