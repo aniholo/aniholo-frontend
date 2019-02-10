@@ -10,7 +10,7 @@ import banner from './pageElements/banner.vue'
 import sortingBy from './pageElements/sortingBy.vue'
 
 export default {
-  name: 'board',
+  name: 'chat',
   components: {
     banner,
     sortingBy

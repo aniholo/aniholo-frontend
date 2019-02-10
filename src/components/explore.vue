@@ -1,18 +1,16 @@
 <template>
   <div class="root">
-    <banner></banner>
+      ibi
     <sortingBy></sortingBy>
   </div>
 </template>
 
 <script>
-import banner from './pageElements/banner.vue'
 import sortingBy from './pageElements/sortingBy.vue'
 
 export default {
-  name: 'board',
+  name: 'explore',
   components: {
-    banner,
     sortingBy
   }
 }
