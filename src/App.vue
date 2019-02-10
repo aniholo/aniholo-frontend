@@ -1,10 +1,13 @@
 <template>
   <div class="root">
-    <router-view :user="user"></router-view>
+    <navigation></navigation>
+    <router-view id="content" :user="user">
+    </router-view>
   </div>
 </template>
 
 <script>
+import navigation from './components/pageElements/nav.vue'
 
 export default {
   data: function () {
@@ -14,6 +17,7 @@ export default {
   },
   name: 'app',
   components: {
+    navigation
   }
 }
 </script>

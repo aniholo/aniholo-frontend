@@ -1,15 +1,16 @@
 <template>
   <div class="root">
-    <navigation></navigation>
+    <banner></banner>
   </div>
 </template>
 
 <script>
-import navigation from './pageElements/nav.vue'
+import banner from './pageElements/banner.vue'
+
 export default {
   name: 'board',
   components: {
-    navigation
+    banner
   }
 }
 </script>
