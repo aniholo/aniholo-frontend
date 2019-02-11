@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="boardTitle">
-            <p>Anihola</p>
+            <p>Aniholo</p>
         </div>
         <!--
         <div class="searchArea">
