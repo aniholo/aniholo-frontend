@@ -92,6 +92,7 @@ nav .menuArea li{
     height: 50px;
     line-height: 50px;
     font-size: 11pt;
+    cursor: pointer;
 }
 
 nav .menuArea .router-link-active {
@@ -314,4 +315,109 @@ nav .recentArea > div p {
 .root {
     width: 100%;
     height: 100%;
+}
+
+/* Router transitions */
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .16s;
+  }
+.fade-enter, .fade-leave-to {
+    opacity: .5;
+}
+
+.rowContainer {
+    width: 100%;
+    height: 225px;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.rowBtnWrapper {
+    width: 100%;
+    height: 225px;
+    position: absolute;
+}
+
+.rowBtnWrapper button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: #1b2631;
+    top: 90px;
+    position: absolute;
+}
+
+.rowBtnWrapper button:nth-child(1){
+    left: -50px;
+}
+
+.rowBtnWrapper button:nth-child(2){
+    right: -50px;
+}
+
+.rowTitle {
+    margin-top: 25px;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    font-size: 26px;
+}
+
+.animeCard {
+    width: 450px;
+    height: calc(225px - 2px);
+    background: #283747;
+    border: 1px solid #1b2631;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
+}
+
+.animeCard .thumb {
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    background-size: cover;
+}
+
+.animeCard .content {
+    white-space: normal;
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 50px - 20px);
+    margin-left: 10px;
+    height: calc(100% - 10px);
+    margin-top: 5px;
+    vertical-align: top;
+    line-height: 200%;
+}
+
+
+.animeCard .content h2 {
+    line-height: 190%;
+}
+
+.animeCard .content p {
+    font-size: 14px;
+}
+
+.animeCard .content .stats {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #1b2631;
+}
+
+.animeCard .content .stats P {
+    font-size: 12.5px;
 }

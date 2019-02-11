@@ -1,17 +1,18 @@
 <template>
   <div class="root">
-      ibi
-    <sortingBy></sortingBy>
+    <div class="subContent">
+      <animeRow></animeRow>
+    </div>
   </div>
 </template>
 
 <script>
-import sortingBy from './pageElements/sortingBy.vue'
+import animeRow from './pageElements/animeRow.vue'
 
 export default {
   name: 'explore',
   components: {
-    sortingBy
+    animeRow
   }
 }
 </script>
