@@ -18,12 +18,12 @@ export default new Router({
     {
         path: '/explore',
         name: 'explore',
-        component: require('@/components/explore')
+        component: require('@/components/explore').default
     },
     {
         path: '/chat',
         name: 'chat',
-        component: require('@/components/chat')
+        component: require('@/components/chat').default
     }
   ]
 })
