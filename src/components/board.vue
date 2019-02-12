@@ -6,34 +6,32 @@
 </template>
 
 <script>
-import banner from './pageElements/banner.vue'
-import sortingBy from './pageElements/sortingBy.vue'
-// import axios from 'axios'
+import banner from "./pageElements/banner.vue";
+import sortingBy from "./pageElements/sortingBy.vue";
+import axios from 'axios'
 
 export default {
-  name: 'board',
+  name: "board",
   components: {
     banner,
     sortingBy
   },
-  mounted () {
-    /*
+  mounted() {
     const options = {
-      url: 'http://127.0.0.1:8000/api/token/',
-      method: 'POST',
+      url: "http://127.0.0.1:8000/auth/login",
+      method: "POST",
       data: {
-        username: 'testuser01',
-        password: 'hunter2'
+        user_id: "testuser01",
+        password: "hunter2"
       }
-    }
+    };
     axios(options)
-      .then(function (response) {
+      .then(function(response) {
         // console.log(response);
       })
-      .catch(function (error) {
+      .catch(function(error) {
         // console.log(error);
     });
-    */
   }
 }
 </script>

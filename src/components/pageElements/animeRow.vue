@@ -1,6 +1,6 @@
 <template>
     <div class="root" style="position: relative;">
-        <div class="rowTitle">Popular Anime ></div>
+        <div class="rowTitle">Popular Anime <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 20 16"><path fill="#D6DBDF" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg></div>
         <div class="rowContainer">
             <div class="row">
                 <div class="animeCard">
@@ -35,8 +35,8 @@
                 </div>
             </div>
             <div class="rowBtnWrapper">
-                <button>o</button>
-                <button>o</button>
+                <button v-on:click="scroll('left', 100)">o</button>
+                <button v-on:click="scroll('right', 100)">o</button>
             </div>
         </div>
     </div>
@@ -44,6 +44,24 @@
 
 <script>
 export default {
-  name: 'navigation'
+  name: 'navigation',
+  methods: {
+    scroll: function (dir, dist) {
+      if (dir == 'right') {
+        let unit = dist / 30
+        console.log(unit)
+
+        // Working on animating scroll
+        for (var i = 0; i < 30; i++) {
+            setTimeout(function () {
+                document.getElementsByClassName('row')[0].scrollLeft = -unit
+                console.log(i)
+            }, 500);
+        } 
+      } else {
+        document.getElementsByClassName('row')[0].scrollLeft = dist
+      }
+    }
+  }
 }
 </script>
