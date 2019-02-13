@@ -29,13 +29,22 @@ html, body {
     border-radius: 3px;
     border: 0;
     background: #5499C7;
-    text-indent: 10px;
+    text-indent: 12.5px;
     color: #D4E6F1;
     float: left;
+    font-size: 13px;
 }
 
 ::placeholder {
     color: #1F618D;
+}
+
+#topNav > svg{
+    width: 40px;
+    margin: 6px 30px;
+    margin-right: 34px;
+    float: left;
+    z-index: 4;
 }
 
 #sideNav {
@@ -45,7 +54,7 @@ html, body {
     top: 0;
     left: 0;
     color: #D5D8DC;
-    border-right: 1px solid #17202A;
+    border-right: 1px solid #2c3e50;
     background: #273746;
 }
 
@@ -120,7 +129,7 @@ html, body {
 
 #sideNav .dropdown .toggle {
     height: 40px;
-    line-height: 44px;  
+    line-height: 42px;  
     font-size: 14px;
 }
 
@@ -130,14 +139,14 @@ html, body {
     margin-top: 50px;
     line-height: 44px;  
     font-size: 14px;
-    border-bottom: 1px solid #17202A;
+    border-bottom: 1px solid #2c3e50;
     text-indent: 12.5px;
 }
 
 #sideNav #tagCloud {
     width: 100%;
     height: calc(100% - 40px - 40px - 50px);
-    border-bottom: 1px solid #17202A;
+    border-bottom: 1px solid #2c3e50;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -154,7 +163,7 @@ html, body {
 #content {
     width: calc(100% - 250px);
     margin-left: 250px;
-    margin-top: 75px;
+    margin-top: 50px;
     position: relative;
 }
 
@@ -169,13 +178,13 @@ html, body {
     height: 150px;
     background: 
     linear-gradient( to right,
-      rgba(52, 73, 94 , .75), 
-      rgba(52, 73, 94, .5)
+      rgba(52, 73, 94 , .25), 
+      rgba(52, 73, 94, .25)
     ),
     url(https://a.thumbs.redditmedia.com/1olCjjrFzT7dHUkwAw0BbuedBT7txCQiS2SDXpI7W50.png);
     background-position: center;
     background-size: cover;
-    border-bottom: 1px solid #1b2631;
+    border-bottom: 1px solid #2c3e50;
 }
 
 .banner .tagline {
@@ -206,11 +215,12 @@ html, body {
 
 .post {
     width: 100%;
+    max-width: 800px;
     background: #273746;
-    margin-top: 10px;
+    margin-bottom: 25px;
     border-radius: 5px;
     color: #D5D8DC;
-    border: 1px solid #17202A;
+    border: 1px solid #2c3e50;
     position: relative;
 }
 
@@ -224,7 +234,7 @@ html, body {
 .post > .vote {
     width: 75px;
     height: calc(100% - 15px);
-    border-left: 1px solid #1b2631;
+    border-left: 1px solid #2c3e50;
     position: absolute;
     right: 0;
     top: 7.5px;
@@ -235,7 +245,7 @@ html, body {
     margin-left: 10px;
     height: 35px;
     line-height: 35px;
-    border-top: 1px solid #1b2631;
+    border-top: 1px solid #2c3e50;
     text-align: right;
 }
 
@@ -353,7 +363,7 @@ html, body {
     width: 475px;
     height: calc(225px - 2px);
     background: #283747;
-    border: 1px solid #1b2631;
+    border: 1px solid #2c3e50;
     border-radius: 5px;
     display: inline-block;
     margin: 0 5px;
@@ -395,7 +405,7 @@ html, body {
     position: absolute;
     width: 100%;
     bottom: 0;
-    border-top: 1px solid #1b2631;
+    border-top: 1px solid #2c3e50;
 }
 
 .animeCard .content .stats P {
