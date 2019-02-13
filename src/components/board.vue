@@ -1,39 +1,44 @@
 <template>
   <div class="root">
-    <banner></banner>
-    <sortingBy></sortingBy>
+      <section class="subContent">
+          <post></post>
+          <post></post>
+          <post></post>
+          <post></post>
+          <post></post>
+          <post></post>
+      </section>
   </div>
 </template>
 
 <script>
-import banner from './pageElements/banner.vue'
-import sortingBy from './pageElements/sortingBy.vue'
-// import axios from 'axios'
-
+import axios from 'axios'
+import post from './pageElements/post.vue'
 export default {
-  name: 'board',
+  name: "board",
   components: {
-    banner,
-    sortingBy
+    post
   },
-  mounted () {
-    /*
+  mounted() {
+    var bodyFormData = new FormData();
+    bodyFormData.set('user_id', '')
+    bodyFormData.set('password', '')
+
     const options = {
-      url: 'http://127.0.0.1:8000/api/token/',
-      method: 'POST',
-      data: {
-        username: 'testuser01',
-        password: 'hunter2'
-      }
-    }
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      },
+      url: "http://127.0.0.1:8000/auth/login",
+      method: "POST",
+      data: bodyFormData
+    };
     axios(options)
-      .then(function (response) {
+      .then(function(response) {
         // console.log(response);
       })
-      .catch(function (error) {
+      .catch(function(error) {
         // console.log(error);
     });
-    */
   }
 }
 </script>

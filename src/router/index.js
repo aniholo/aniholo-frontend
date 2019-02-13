@@ -24,6 +24,11 @@ export default new Router({
         path: '/chat',
         name: 'chat',
         component: require('@/components/chat').default
-    }
+    },
+    {
+      path: '/auth/login',
+      name: 'login',
+      component: require('@/components/auth/login').default
+  }
   ]
 })
