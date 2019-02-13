@@ -5,149 +5,163 @@
     margin: 0;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-    color: #d6dbdf;
 }
 
 html, body {
     background: #212f3c;
 }
 
-nav {
-    width: 249px;
+#topNav {
+    width: 100%;
+    height: 50px;
+    background: #1F618D;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    text-align: right;
+}
+
+#topNav input {
+    margin-top: 5px;
+    height: 40px;
+    width: 26%;
+    min-width: 200px;
+    border-radius: 3px;
+    border: 0;
+    background: #5499C7;
+    text-indent: 10px;
+    color: #D4E6F1;
+    float: left;
+}
+
+::placeholder {
+    color: #1F618D;
+}
+
+#sideNav {
+    width: 250px;
     height: 100%;
-    background: #283747;
     position: fixed;
     top: 0;
     left: 0;
-    border-right: 1px solid #1b2631;
+    color: #D5D8DC;
+    border-right: 1px solid #17202A;
+    background: #273746;
 }
 
-nav .boardTitle {
-    width: calc(100% - 20px);
-    margin-left: 10px;
-    height: 60px;
-    border-bottom: 1px solid #1b2631;
+#topNav .userBox {
+    color: #D5D8DC;
+    text-align: left;
+    width: 225px;
+    height: 100%;
+    display: inline-block;
 }
 
-nav .boardTitle p{
-    color: #e91e63;
-    line-height: 60px;
-    font-family: 'ZCOOL KuaiLe', cursive;
-    font-size: 30px;
+#topNav .userBox img {
+    margin: 8px 12.5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
 }
 
-nav .userBox {
-    width: calc(100% - 20px);
-    margin-left: 10px;
-    height: 60px;
-    border-bottom: 1px solid #1b2631;
-}
-
-nav .userBox img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 10px;
-    margin-left: 0;
-}
-
-nav .userBox .userInfo {
-    width: calc(100% - 40px - 14px);
+#topNav .userBox .userInfo {
+    width: calc(100% - 50px - 15px);
     vertical-align: top;
     display: inline-block;
 }
 
-nav .userBox .userInfo h4 {
-    margin-top: 12.5px;
+#topNav .userBox .userInfo h4 {
+    margin-top: 8px;
 }
 
-nav .userBox .userInfo h6 {
+#topNav .userBox .userInfo h6 {
     font-weight: 200;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
-.searchArea {
-    width: calc(100% - 20px);
-    margin-bottom: 10px;
+#topNav .menuArea {
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.searchArea input{
-    width: 100%;
-    padding: 0 10px;
-    height: 30px;
-    border: 1px solid #1b2631;
-    background: #283747;
-    border-radius: 3px;
-    color: #5d6d7e;
-}
-
-nav .menuArea {
-    width: calc(100% - 20px);
-    padding: 10px 0;
-    margin-left: 10px;
-    border-bottom: 1px solid #1b2631;
-}
-
-nav .menuArea li{
+#topNav .menuArea li{
+    margin: 0 10px;
     height: 50px;
+    display: inline-block;
     line-height: 50px;
     font-size: 11pt;
     cursor: pointer;
+    color: #ABB2B9;
 }
 
-nav .menuArea .router-link-active {
-    color: #e91e63;
+#topNav .menuArea .router-link-active {
+    color: #EAECEE;
 }
 
-nav .menuArea .router-link-active svg {
-    fill: #e91e63;
+#topNav .menuArea .router-link-active svg {
+    fill: #EAECEE;
 }
 
-nav .menuArea li svg {
-    fill: #d6dbdf;
-}
-
-nav .menuArea li svg {
-    margin-right: 12px;
+#topNav .menuArea li svg {
+    margin: 0 12.5px;
     float: left;
     margin-top: 15px;
+    height: 20px;
+    fill: #ABB2B9;
 }
 
-nav .recentArea {
-    width: calc(100% - 20px);
-    margin-left: 10px;
-}
-
-nav .recentArea > div {
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    border: 1px solid #1b2631;
-    margin-top: 10px;
-    border-radius: 3px;
-}
-
-nav .recentArea > div h4 {
-    font-weight: 200;
+#sideNav .dropdown .toggle svg {
+    margin: 0 12.5px;
     float: left;
-    font-size: 14px;
-    margin-left: 10px;
+    margin-top: 8px;
+    fill: #D5D8DC;
 }
 
-nav .recentArea > div p {
+#sideNav .dropdown .toggle {
+    height: 40px;
+    line-height: 44px;  
     font-size: 14px;
-    margin-right: 10px;
-    float: right;
+}
+
+#sideNav #tagCloudLabel {
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    line-height: 44px;  
+    font-size: 14px;
+    border-bottom: 1px solid #17202A;
+    text-indent: 12.5px;
+}
+
+#sideNav #tagCloud {
+    width: 100%;
+    height: calc(100% - 40px - 40px - 50px);
+    border-bottom: 1px solid #17202A;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#sideNav #tagCloud li {
+    padding: 6px 10px;
+    font-size: 12.5px;
+    margin: 4px 4px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #1F618D;
 }
 
 #content {
     width: calc(100% - 250px);
     margin-left: 250px;
+    margin-top: 75px;
+    position: relative;
 }
 
 .subContent {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .banner {
@@ -156,7 +170,7 @@ nav .recentArea > div p {
     background: 
     linear-gradient( to right,
       rgba(52, 73, 94 , .75), 
-      rgba(52, 73, 94, 0)
+      rgba(52, 73, 94, .5)
     ),
     url(https://a.thumbs.redditmedia.com/1olCjjrFzT7dHUkwAw0BbuedBT7txCQiS2SDXpI7W50.png);
     background-position: center;
@@ -190,33 +204,34 @@ nav .recentArea > div p {
     font-weight: bold;
 }
 
-#posts {
-    max-width: 750px;
-    display: inline-block;
-}
-
-#posts > div {
+.post {
     width: 100%;
-    background: #283747;
+    background: #273746;
     margin-top: 10px;
     border-radius: 5px;
-    border: 1px solid #1b2631;
+    color: #D5D8DC;
+    border: 1px solid #17202A;
+    position: relative;
 }
 
-#posts > div:nth-child(1) {
-    margin-top: 25px;
-}
-
-
-#posts div > img{
+.post > img{
     width: 100px;
     border-radius: 3px;
     margin: 10px;
     display: inline-block;
 }
 
-#posts > div > .interactions {
-    width: calc(100% - 20px);
+.post > .vote {
+    width: 75px;
+    height: calc(100% - 15px);
+    border-left: 1px solid #1b2631;
+    position: absolute;
+    right: 0;
+    top: 7.5px;
+}
+
+.post > .interactions {
+    width: calc(100% - 20px - 75px);
     margin-left: 10px;
     height: 35px;
     line-height: 35px;
@@ -224,17 +239,17 @@ nav .recentArea > div p {
     text-align: right;
 }
 
-#posts > div > .interactions p {
+.post > .interactions p {
     display: inline-block;
     font-size: 12.5px;
     margin-left: 10px;
 }
 
-#posts > div > .interactions ul{
+.post > .interactions ul{
     float: left;
 }
 
-#posts > div > .interactions ul li{
+.post > .interactions ul li{
     background: red;
     border-radius: 3px;
     margin-right: 4px;
@@ -245,37 +260,23 @@ nav .recentArea > div p {
     padding: 0px 8px;
 }
 
-#posts > div > .content  {
+.post > .content  {
     display: inline-block;
-    width: calc(100% - 44px - 100px);
+    width: calc(100% - 44px - 100px - 75px);
     vertical-align: top;
     margin-top: 5px;
     line-height: 200%;
 }
 
-#posts > div > .content  p{
+.post > .content  p{
     line-height: 175%;
     font-size: 15px;
     margin-bottom: 10px;
 }
 
-#posts > div > .content  p span{
-    color: #e91e63;
+.post > .content  p span{
+    color: #1F618D;
     padding-left: 5px;
-}
-
-#sidebar {
-    width: 250px;
-    display: inline-block;
-    vertical-align: top;
-    margin: 25px;
-}
-
-#tagBar {
-    width: 100%;
-    background: #283747;
-    border-radius: 3px;
-    border: 1px solid #1b2631;
 }
 
 #footer {
@@ -285,31 +286,6 @@ nav .recentArea > div p {
     line-height: 25px;
     margin-top: 10px;
     text-align: center;
-}
-
-.titleBar {
-    width: calc(100% - 20px);
-    height: 30px;
-    line-height: 30px;
-    margin: 10px;
-    margin-top: 6px;
-    border-bottom: 1px solid #1b2631;
-    font-size: 14px;
-}
-
-.tagCloud {
-    width: calc(100% - 20px);
-    margin-left: 10px;
-}
-
-.tagCloud li {
-    margin-bottom: 10px;
-    margin-right: 4px;
-    padding: 5px 8px;
-    display: inline-block;
-    border-radius: 3px;
-    font-size: 14px;
-    background: #1b2631;
 }
 
 .root {
@@ -352,16 +328,16 @@ nav .recentArea > div p {
     height: 50px;
     border: 0;
     background: #1b2631;
-    top: 90px;
+    top: 88px;
     position: absolute;
 }
 
 .rowBtnWrapper button:nth-child(1){
-    left: -50px;
+    left: -52.5px;
 }
 
 .rowBtnWrapper button:nth-child(2){
-    right: -50px;
+    right: -52.5px;
 }
 
 .rowTitle {
@@ -369,11 +345,12 @@ nav .recentArea > div p {
     width: 100%;
     height: 75px;
     line-height: 75px;
-    font-size: 26px;
+    font-size: 25px;
+    color: #D5D8DC;
 }
 
 .animeCard {
-    width: 450px;
+    width: 475px;
     height: calc(225px - 2px);
     background: #283747;
     border: 1px solid #1b2631;
@@ -384,22 +361,25 @@ nav .recentArea > div p {
 }
 
 .animeCard .thumb {
-    width: 50px;
+    width: 150px;
     height: 100%;
     display: inline-block;
     background-size: cover;
+    background-position: center;
+    border-radius: 5px 0 0 5px;
 }
 
 .animeCard .content {
     white-space: normal;
     position: relative;
     display: inline-block;
-    width: calc(100% - 50px - 20px);
+    width: calc(100% - 150px - 20px);
     margin-left: 10px;
     height: calc(100% - 10px);
     margin-top: 5px;
     vertical-align: top;
     line-height: 200%;
+    color: #D5D8DC;
 }
 
 

@@ -1,20 +1,23 @@
 <template>
   <div class="root">
-    <banner></banner>
-    <sortingBy></sortingBy>
+      <section class="subContent">
+          <post></post>
+          <post></post>
+          <post></post>
+          <post></post>
+          <post></post>
+          <post></post>
+      </section>
   </div>
 </template>
 
 <script>
-import banner from './pageElements/banner.vue'
-import sortingBy from './pageElements/sortingBy.vue'
 // import axios from 'axios'
-
+import post from './pageElements/post.vue'
 export default {
   name: 'board',
   components: {
-    banner,
-    sortingBy
+    post
   },
   mounted () {
     /*
