@@ -9,10 +9,7 @@
   },
   "dependencies": {
     "ajv": "^6.8.1",
-<<<<<<< HEAD
-=======
     "axios": "^0.18.0",
->>>>>>> upstream/master
     "vue": "^2.5.22",
     "vue-router": "^3.0.2"
   },
